@@ -12,7 +12,7 @@ export const NotificationProvider = ({ children }) => {
 console.log(user)
  useEffect(() => {
   if (!user) return;
-
+console.log("user id",user)
   setLoading(true);
   const unsubscribe = subscribeNotifications(
     user.id,    // ✅ consistent user ID

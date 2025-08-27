@@ -52,8 +52,9 @@ const NotificationPanel = ({ darkMode }) => {
 //     loadRole();
 //   }, []);
   const {role}=useAuth()
-console.log(role)
+// console.log(role)
   const handleNotificationClick = async (notification) => {
+    console.log(notification)
     console.log("notif", notification);
     if (isUnread(notification)) {
       await handleMarkRead(notification.id);

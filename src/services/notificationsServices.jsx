@@ -8,7 +8,7 @@ import axios from 'axios';
 export const subscribeNotifications = (userId, userRole, callback, errorCallback) => {
   try {
     let q;
-
+console.log("Subscribing with:", userId, userRole);
   if (userRole === "admin") {
   // ✅ Admin only sees notifications targeted to admins
   q = query(

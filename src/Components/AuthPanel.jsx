@@ -127,6 +127,7 @@ const handleLogin = async (e) => {
             role: res.role,
             name: res.name,
             email: res.email,
+            id:res.id,
             expiry: expiryTime,
         };
 
